@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.memory-of-snow</groupId>
+    <artifactId>SmallClientToReceivePostsFromNostr</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.eclipse.jetty.websocket</groupId>
+            <artifactId>websocket-jetty-client</artifactId>
+            <version>11.0.15</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty.http2</groupId>
+            <artifactId>http2-client</artifactId>
+            <version>11.0.15</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-client</artifactId>
+            <version>11.0.15</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty.http2</groupId>
+            <artifactId>http2-http-client-transport</artifactId>
+            <version>11.0.14</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
