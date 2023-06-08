@@ -69,7 +69,7 @@ public class SmallClientToReceivePostsFromNostr {
             return;
         }
 
-        if(queue.offer(message)){
+        if(!queue.offer(message)){
             System.err.println("メッセージの受信に失敗しました。");
         }
 
